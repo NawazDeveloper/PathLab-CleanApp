@@ -1,0 +1,7 @@
+D:\work\NRD\CurantCOde\pathlab\API\ClarmindsApp\obj\Debug\net7.0\pathLab.csproj.AssemblyReference.cache
+D:\work\NRD\CurantCOde\pathlab\API\ClarmindsApp\obj\Debug\net7.0\pathLab.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\NRD\CurantCOde\pathlab\API\ClarmindsApp\obj\Debug\net7.0\pathLab.AssemblyInfoInputs.cache
+D:\work\NRD\CurantCOde\pathlab\API\ClarmindsApp\obj\Debug\net7.0\pathLab.AssemblyInfo.cs
+D:\work\NRD\CurantCOde\pathlab\API\ClarmindsApp\obj\Debug\net7.0\pathLab.csproj.CoreCompileInputs.cache
+D:\work\NRD\CurantCOde\pathlab\API\ClarmindsApp\obj\Debug\net7.0\pathLab.MvcApplicationPartsAssemblyInfo.cs
+D:\work\NRD\CurantCOde\pathlab\API\ClarmindsApp\obj\Debug\net7.0\pathLab.MvcApplicationPartsAssemblyInfo.cache
