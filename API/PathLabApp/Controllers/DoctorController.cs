@@ -1,12 +1,11 @@
-﻿using ClarmindsApp.DTOs;
-using ClarmindsApp.Entities;
-using ClarmindsApp.Interfaces;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Identity.Client;
+using pathLab.Application.DTOs;
+using pathLab.Application.Interfaces;
 
-namespace ClarmindsApp.Controllers
+namespace pathLab.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

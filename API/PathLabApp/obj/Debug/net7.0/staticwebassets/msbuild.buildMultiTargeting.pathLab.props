@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\pathLab.props" />
+</Project>

@@ -1,10 +1,10 @@
-using ClarmindsApp.Interfaces;
-using ClarmindsApp.Repositories;
-using ClarmindsApp.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using pathLab.Application.Interfaces;
+using pathLab.Infrastructure.Repositories;
+using pathLab.Infrastructure.Services;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
