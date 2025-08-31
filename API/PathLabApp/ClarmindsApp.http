@@ -1,6 +1,0 @@
-@ClarmindsApp_HostAddress = http://localhost:5044
-
-GET {{ClarmindsApp_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

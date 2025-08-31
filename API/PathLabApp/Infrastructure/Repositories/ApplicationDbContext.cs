@@ -9,7 +9,6 @@ namespace pathLab.Infrastructure.Repositories
         {
         }
 
-
         public DbSet<User> Users => Set<User>();
         public DbSet<Doctor> Doctors => Set<Doctor>();
         public DbSet<Address> Addresses => Set<Address>();
@@ -17,7 +16,7 @@ namespace pathLab.Infrastructure.Repositories
         public DbSet<UserRole> UserRoles => Set<UserRole>();
         public DbSet<Gender> Genders => Set<Gender>();
         public DbSet<Designation> Designations => Set<Designation>();
-
+        public DbSet<CbcTest> CbcTest => Set<CbcTest>();
         protected override void OnModelCreating(ModelBuilder model)
         {
             base.OnModelCreating(model);

@@ -1,0 +1,42 @@
+<div class="dashboard">
+  <!-- Sidebar -->
+  <nav class="sidebar" [class.collapsed]="isCollapsed">
+    <div class="logo">PathLab</div>
+    <ul>
+      <li [class.active]="activeMenu==='dashboard'" (click)="setActive('dashboard')">🏠 Dashboard</li>
+      <li [class.active]="activeMenu==='tests'" (click)="setActive('tests')">🧪 Tests</li>
+      <li [class.active]="activeMenu==='reports'" (click)="setActive('reports')">📄 Reports</li>
+      <li [class.active]="activeMenu==='patients'" (click)="setActive('patients')">👨‍⚕️ Patients</li>
+      <li [class.active]="activeMenu==='settings'" (click)="setActive('settings')">⚙️ Settings</li>
+    </ul>
+    <div class="toggle-btn" (click)="toggleSidebar()">
+      {{ isCollapsed ? '➡️' : '⬅️' }}
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main">
+    <!-- Topbar -->
+    <header class="topbar">
+      <h2>{{ activeMenu | titlecase }}</h2>
+      <div class="profile">
+        <img src="https://via.placeholder.com/40" alt="profile" />
+        <span>John Doe</span>
+      </div>
+    </header>
+
+    <!-- Stats Cards -->
+    <section class="stats">
+      <div class="card">💰 Earnings <p>$628</p></div>
+      <div class="card">📤 Shares <p>2434</p></div>
+      <div class="card">👍 Likes <p>1259</p></div>
+      <div class="card">⭐ Rating <p>8.5</p></div>
+    </section>
+
+    <!-- Chart Placeholder -->
+    <section class="chart">
+      <h3>Monthly Reports</h3>
+      <div class="chart-box">📊 Chart goes here</div>
+    </section>
+  </div>
+</div>

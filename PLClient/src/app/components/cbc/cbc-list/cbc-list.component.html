@@ -1,0 +1,38 @@
+<h2>CBC Tests</h2>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Hemoglobin</th>
+      <th>RBC</th>
+      <th>WBC</th>
+      <th>Platelets</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let test of cbcTests">
+      <td>{{ test.cbcTestId }}</td>
+      <td>{{ test.hemoglobin }}</td>
+      <td>{{ test.rbcCount }}</td>
+      <td>{{ test.wbcCount }}</td>
+      <td>{{ test.plateletCount }}</td>
+      <td>
+        <button (click)="editTest(test)">Edit</button>
+        <button (click)="deleteTest(test.cbcTestId)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 *ngIf="!selectedTest">Add New Test</h3>
+<h3 *ngIf="selectedTest">Edit Test</h3>
+
+<app-cbc-form
+  [test]="selectedTest || {cbcTestId:0, hemoglobin:0, rbcCount:0, wbcCount:0, plateletCount:0, hematocrit:0, mcv:0, mch:0, mchc:0}"
+  (save)="onFormSubmit($event)"
+  (cancel)="cancelEdit()">
+</app-cbc-form>

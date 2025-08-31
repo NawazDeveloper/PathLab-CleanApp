@@ -3,7 +3,10 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using pathLab.Application.Interfaces;
+using pathLab.Application.Service;
 using pathLab.Infrastructure.Repositories;
+using pathLab.Infrastructure.Repositories.IRepo;
+using pathLab.Infrastructure.Repositories.Repo;
 using pathLab.Infrastructure.Services;
 using System.Text;
 
@@ -22,6 +25,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // repository registration
 builder.Services.AddScoped<IUserAuth, UserAuthService>();
 builder.Services.AddScoped<IDoctor, DoctorServices>();
+builder.Services.AddScoped<ICbcService, CbcService>();
+builder.Services.AddScoped<ICbcTestRepository , CbcTestRepository>();
 // add controller
 builder.Services.AddControllers()
     .AddJsonOptions(opt =>
